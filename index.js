@@ -53,8 +53,8 @@ function buildPokedex(pokedex){
     
 
     //Promise.all( you give an array of promises )  and you receive an array of data
-    Promise.all(fetchImgPromises)
-    .then((arrayOfPokemons)=> {
+    Promise.all(fetchImgPromises) //(arrayOfPromisesOfPokemons)
+    .then((arrayOfPokemons)=> { //(arraOfDataOfPokemons)
         addToDom(pokeNames, pokeLinks, arrayOfPokemons)
     })
 };
